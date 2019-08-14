@@ -17,5 +17,5 @@ Ejecutar una terminal "t" e interactiva "i" dentro de un contendor, "sh" sería 
 docker run -it alpine:3.7 sh
 
 Ejecutar una terminal "t" e interactiva "i" dentro de un contendor, "bash" sería una shell.
-docker run -it alpine:3.7 bash
+docker exec -it alpine:3.7 bash
 
