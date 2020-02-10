@@ -1,21 +1,13 @@
-Listar contenedores
-docker ps
+# Docker
 
-Ejecutar contendor hello-world pero si no lo tienes lo descarga desde docker registry
-docker run hello-world
+## Funciones
 
-Descargar la ultima versión del contenedor alpine
-docker pull alpine:latest
-
-Descargar la versión 3.7 del contenedor alpine
-docker pull alpine:3.7
-
-Ejecutar comando dentro de contendor
-docker run alpine:3.7 ls -l #listará la salida de directorios
-
-Ejecutar una terminal "t" e interactiva "i" dentro de un contendor, "sh" sería una shell.
-docker run -it alpine:3.7 sh
-
-Ejecutar una terminal "t" e interactiva "i" dentro de un contendor, "bash" sería una shell.
-docker exec -it alpine:3.7 bash
-
+Indice:  
+- [Instalar Docker](https://github.com/forraxa/docker/blob/master/funciones/funciones%20con%20parametros.md)   
+- [Trabajar con contenedores](https://github.com/forraxa/Scala/blob/master/funciones/funci%C3%B3n%20con%20par%C3%A1metros%20opcionales.md)  - [Redes en Docker](https://github.com/forraxa/Scala/blob/master/funciones/funci%C3%B3n%20con%20tipo%20de%20retorno%20opcional.md)   
+- [Volumenes](https://github.com/forraxa/Scala/blob/master/funciones/funci%C3%B3n%20con%20par%C3%A1metro%20impl%C3%ADcito.md)    
+- [Crear y gestionar imágenes]    
+- [Docker Compose]    
+- [Docker Registry]  
+- [Docker swarm, Docker en Cluster]  
+- [Kubernetes]  
