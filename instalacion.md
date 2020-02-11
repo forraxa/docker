@@ -20,8 +20,8 @@ Instalar la clave GPG de Docker necesaria para hacer la instalación de determin
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 Por defecto debería estar activado el repositorio estable "stable" pero por si acaso lo activamos de manera definitiva  
-stable: La última versión de Docker estable, correcta (producción)  
-Edge: Versión de pruebas y últimas novedades  
+Stable: La última versión de Docker estable, correcta (producción)  
+Test: Versión de pruebas y últimas novedades  
 ```
 sudo add-apt-repository \
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -41,3 +41,24 @@ Evaluar la versión de Docker
 docker --version
 ```
 ## Instalación en Docker en Centos (Fedora, Red Hat y Oracle Linux)  
+
+Instalar paquetes necesarios del Sistema operativo
+```
+yum install -y yum-utils device-mapper-persistent-data lvm2
+```
+Configurar el acceso al repositorio "stable"
+```
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+Instalar Docker community edition
+```
+yum install docker-ce
+```
+Comprobar que está instalado, arrancamos el servicio, comprobamos que está funcionando
+```
+systemctl start docker
+```
+Evaluar la versión
+```
+docker --version
+```
