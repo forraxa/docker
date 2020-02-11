@@ -1,5 +1,7 @@
-## Instalación de Docker en Ubuntu
-
+## Instalación de Docker en Ubuntu (Debian, Suse….)  
+Versión Ubuntu para la instalación  
+Ubuntu 18.04.4 LTS  
+Instrucciones de página oficial ubuntu https://docs.docker.com/install/
 Actualización del sistema operativo (el índice de los paquetes)
 ```
 sudo apt-get update
@@ -37,4 +39,4 @@ Evaluar la versión de Docker
 ```
 docker --version
 ```
-## Instalación en Docker en Centos
+## Instalación en Docker en Centos (Fedora, Red Hat y Oracle Linux)  
