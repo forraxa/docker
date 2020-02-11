@@ -4,8 +4,8 @@
 dockerd: daemon de docker (permite arrancar los servicios de docker)  
 docker: Es la herramienta de cliente de docker  
 
-## En Ubuntu y Centos 7 y 8 se utilizan los mismos comandos
-Arrancar docker
+## Arrancar docker 
+En Ubuntu y Centos 7 y 8 se utilizan los mismos comandos
 ```
 systemctl start docker
 ```
