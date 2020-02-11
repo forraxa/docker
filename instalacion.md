@@ -16,9 +16,9 @@ Instalar la clave GPG de Docker necesaria para hacer la instalación de determin
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-Por defecto debería estar activado el repositorio estable "stable" pero por si acaso lo activamos de manera definitiva
-stable: La última versión de Docker estable, correcta (producción)
-Edge: Versión de pruebas y últimas novedades
+Por defecto debería estar activado el repositorio estable "stable" pero por si acaso lo activamos de manera definitiva  
+stable: La última versión de Docker estable, correcta (producción)  
+Edge: Versión de pruebas y últimas novedades  
 ```
 sudo add-apt-repository \
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
