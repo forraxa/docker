@@ -1,4 +1,4 @@
-## Trabajar con contenedores   
+## Trabajar con contenedores e imágenes  
 
 [manuales de referencia de docker](https://docs.docker.com/reference/)  
 dockerd: daemon de docker (permite arrancar los servicios de docker)  
@@ -51,13 +51,34 @@ docker ps -n 4 #ver los 4 últimos contenedores sobre los que registró alguna a
 ```
 docker ps -a -n 3 -s #muestra el tamaño de los tres últimos contenedores con actividad aunque no estén activos
 ```
+#### Descargar imagenes
+```
+docker pull ubuntu #la descarga pero no la ejecuta
+```
 #### Ejecutar contenedores
 *docker run creará un contenedor por cada petición.
 ```
 docker run -it ubuntu #modo interactivo con terminal 
 docker start -i 2b5c #arrancar contenedor con modo interactivo indicando el comienzo del CONTANINER ID
+docker run -d nginx #descarga "si no lo tienes" y ejecuta en backgroud el servidor web nginx
 ```
 #### Salir de contenedor
 ```
 exit
+```
+#### Borrar contenedores e imágenes
+```
+docker rm 9ecd #borrar a partir del id del contenedor
+docker rm stoic_ellis #borrar a partir del nombre del contenedor
+docker rmi 4r5t #borrar a partir del id de la imagen
+```
+
+#### Darle nombre a un contendor cuando se ejecuta
+```
+docker run -it --name mi_ubuntu ubuntu bash #arranca un ubuntu interactivo y llámale mi_ubuntu
+```
+#### Ejecutar comandos contra contenedores (util para contenedores backgroud
+```
+docker exec mi_ubuntu echo hola #ejecuta el comando echo hola con la salida hola por terminal
+docker exec -it mi_ubuntu bash #abrir una bash en un contenedor ejecutado en segundo plano.
 ```
