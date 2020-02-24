@@ -51,3 +51,13 @@ docker ps -n 4 #ver los 4 últimos contenedores sobre los que registró alguna a
 ```
 docker ps -a -n 3 -s #muestra el tamaño de los tres últimos contenedores con actividad aunque no estén activos
 ```
+#### Ejecutar contenedores
+*docker run creará un contenedor por cada petición.
+```
+docker run -it ubuntu #modo interactivo con terminal 
+docker start -i 2b5c #arrancar contenedor con modo interactivo indicando el comienzo del CONTANINER ID
+```
+#### Salir de contenedor
+```
+exit
+```
