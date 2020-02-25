@@ -72,7 +72,6 @@ docker rm 9ecd #borrar a partir del id del contenedor
 docker rm stoic_ellis #borrar a partir del nombre del contenedor
 docker rmi 4r5t #borrar a partir del id de la imagen
 ```
-
 #### Darle nombre a un contendor cuando se ejecuta
 ```
 docker run -it --name mi_ubuntu ubuntu bash #arranca un ubuntu interactivo y llámale mi_ubuntu
@@ -81,4 +80,19 @@ docker run -it --name mi_ubuntu ubuntu bash #arranca un ubuntu interactivo y ll�
 ```
 docker exec mi_ubuntu echo hola #ejecuta el comando echo hola con la salida hola por terminal
 docker exec -it mi_ubuntu bash #abrir una bash en un contenedor ejecutado en segundo plano.
+```
+#### Ver comandos de imagenes y contenedores
+```
+docker image
+docker container
+```
+#### Ver que está sacando por pantalla un contenedor que esté en background
+```
+docker logs 3f4r5t # muestra todo lo que ha devuelto
+docker logs 3f4r5t --tail 5 # muestra las 5 últimas lineas que ha devuelto
+docker logs 3f4r5t -f # muestra indefinidamente lineas que está devolviendo
+```
+#### Matar un contenedor
+```
+docker kill 4r5t
 ```
