@@ -10,8 +10,8 @@ Por ejemplo acceder desde navegador localhost:32768
 
 PORTS: 0.0.0.0 nos indica que cualquier ip del contendor será redireccionada, se podría especificar una concreta en contenedores con más de una ip.  
 ```
-CONTAINER ID      IMAGE       COMMAND                  CREATED           STATUS            PORTS                 NAMES  
-9f9f471a3925      nginx       "nginx -g 'daemon of…"   3 seconds ago     Up 2 seconds      0.0.0.0:32768->80/  
+CONTAINER ID    IMAGE   COMMAND                  CREATED         STATUS           PORTS                NAMES  
+9f9f471a3925    nginx   "nginx -g 'daemon of…"   3 seconds ago   Up 2 seconds     0.0.0.0:32768->80/  
 ```
 #### Asignar puerto público para que se pueda acceder desde el exterior al contenedor  
 ```
