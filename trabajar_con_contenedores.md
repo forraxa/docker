@@ -96,3 +96,16 @@ docker logs 3f4r5t -f # muestra indefinidamente lineas que está devolviendo
 ```
 docker kill 4r5t
 ```
+#### Ver el proceso que más está consumiendo en un contenedor
+```
+docker top f4t5
+```
+#### Ver información de un contenedor uso de cpu, memoria, i/o red
+```
+docker stats bb51
+```
+#### Ver propiedades y características de un contenedor o imagen
+Es recomendable enviar la salida a un fichero
+```
+docker inspect bb51 > container1.txt 
+```
