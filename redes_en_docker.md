@@ -17,3 +17,13 @@ CONTAINER ID    IMAGE   COMMAND                  CREATED         STATUS         
 ```
 docker run -d --name nginx2 -p 8080:80 ngix  # ejecutar en background y asignar puerto 8080 de salida
 ```
+#### Comandos para manejar redes dentro de docker
+```
+docker network
+```
+#### Listar redes en docker
+```
+docker network ls
+```
+
+#### Los contenedores por defecto utilizan la red bridge
