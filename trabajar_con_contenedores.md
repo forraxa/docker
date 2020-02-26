@@ -109,3 +109,7 @@ Es recomendable enviar la salida a un fichero
 ```
 docker inspect bb51 > container1.txt 
 ```
+#### Ver que puerto está usando un contenedor
+```
+docker port 9f9f
+```
