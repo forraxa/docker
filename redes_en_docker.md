@@ -52,3 +52,7 @@ Por defecto crea redes bridge
 docker network create red1
 docker network create --subnet=192.168.0.0/16 red2 #declarar la red con una subnet determinada 
 ```
+#### Información de las redes
+```
+nmcli on
+```
