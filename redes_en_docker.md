@@ -56,3 +56,10 @@ docker network create --subnet=192.168.0.0/16 red2 #declarar la red con una subn
 ```
 nmcli on
 ```
+#### Conectar un contenedor con una red
+```
+docker run -it --name ubuntu1 --network red1 ubuntu #creará un ubuntu en la red1
+docker inspect ubuntu1 | grep IPAdd # ver que dirección de ip se le asignó
+docker network connect red2 ubuntu1 #conectar a la red2 el contenedor ubuntu1 pero sin quitarlo de la red donde está actualmente
+docker network disconnect red2 ubuntu1 #desconectar el contenedor de la red2
+```
