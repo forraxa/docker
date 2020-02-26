@@ -63,4 +63,7 @@ docker inspect ubuntu1 | grep IPAdd # ver que dirección de ip se le asignó
 docker network connect red2 ubuntu1 #conectar a la red2 el contenedor ubuntu1 pero sin quitarlo de la red donde está actualmente
 docker network disconnect red2 ubuntu1 #desconectar el contenedor de la red2
 ```
-#### Enlazar contenedores
+#### Borrar una red
+```
+docker network rm red1 
+```
