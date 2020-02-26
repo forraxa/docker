@@ -32,3 +32,23 @@ docker network ls
 ```
 docker network inspect bridge > bridge.txt
 ```
+
+#### Comprobar conexión entre dos contenedores.
+Ejemplo conexión a base de datos desde terminal mongo a mongo2:   
+Datos respectivamente:  
+Instancias: mongo, mongo2  
+ip: 172.17.0.2, 172.17.0.3
+puerto: 27017, 27018
+```
+mongo --host 172.17.0.3 --port 27018
+```
+#### Información para crear una red
+```
+docker network create --help
+```
+#### Crear red
+Por defecto crea redes bridge  
+```
+docker network create red1
+docker network create --subnet=192.168.0.0/16 red2 #declarar la red con una subnet determinada 
+```
