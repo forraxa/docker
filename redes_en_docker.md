@@ -27,3 +27,8 @@ docker network ls
 ```
 
 #### Los contenedores por defecto utilizan la red bridge
+
+#### Inspeccionar red de tipo bridge
+```
+docker network inspect bridge > bridge.txt
+```
